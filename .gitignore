@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs
+/Practice/ClassDiagram/obj/Debug
+/Practice/ClassDiagram/bin/Debug
+/Practice/.vs/ClassDiagram/v17
