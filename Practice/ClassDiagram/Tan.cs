@@ -5,17 +5,9 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Unary
+    public class Tan : Unary
     {
-        public IOperation IOperation
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public void AssignNumberOfOoperands()
+        public double FindTanValue(double RadianOrDegree)
         {
             throw new System.NotImplementedException();
         }

@@ -5,17 +5,9 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Unary
+    public class Multiplication : Binary
     {
-        public IOperation IOperation
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public void AssignNumberOfOoperands()
+        public double Multiply(int operand1, int operand2)
         {
             throw new System.NotImplementedException();
         }

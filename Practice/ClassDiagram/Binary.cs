@@ -7,14 +7,11 @@ namespace ClassDiagram
 {
     public class Binary
     {
-        public void test(string testt)
+        public void AssignNumberOfOperands()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Method()
-        {
-            throw new System.NotImplementedException();
-        }
+      
     }
 }

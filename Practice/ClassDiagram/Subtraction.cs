@@ -5,26 +5,9 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Subtraction
+    public class Subtraction : Binary
     {
-        public void subtract(double a, double b)
-        {
-            throw new System.NotImplementedException();
-        }
-    }
-
-    public class Multiplication
-    {
-        public double multiply(double a, double b)
-        {
-            throw new System.NotImplementedException();
-        }
-    }
-
-    public class Division
-    {
-
-        public double divide(double a, double b)
+        public double Subtract(double operand1, double operand2)
         {
             throw new System.NotImplementedException();
         }

@@ -5,17 +5,9 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Unary
+    public class Cos : Unary
     {
-        public IOperation IOperation
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public void AssignNumberOfOoperands()
+        public double FindCosValue(double RadianOrDegree)
         {
             throw new System.NotImplementedException();
         }

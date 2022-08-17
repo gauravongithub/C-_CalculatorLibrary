@@ -5,17 +5,9 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Unary
+    public class Division : Binary
     {
-        public IOperation IOperation
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public void AssignNumberOfOoperands()
+        public double Divide(double operand1, double operand2)
         {
             throw new System.NotImplementedException();
         }

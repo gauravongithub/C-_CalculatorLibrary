@@ -5,11 +5,11 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Parser
+    public class Parser : EvaluatorClass
     {
-        public string parseInfixToPostfix()
+        public string ParseInfixToPostfix()
         {
-            string infixToPostfix = "";
+            string infixToPostfix = String.Empty;
             return infixToPostfix;
         }
     }

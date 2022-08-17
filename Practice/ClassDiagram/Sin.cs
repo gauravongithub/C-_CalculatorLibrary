@@ -5,17 +5,9 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Unary
+    public class Sin : Unary
     {
-        public IOperation IOperation
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public void AssignNumberOfOoperands()
+        public double FindSinValue(double value)
         {
             throw new System.NotImplementedException();
         }

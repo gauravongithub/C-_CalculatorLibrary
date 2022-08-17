@@ -7,5 +7,6 @@ namespace ClassDiagram
 {
     public interface IOperation
     {
+        void operandNumber();
     }
 }
