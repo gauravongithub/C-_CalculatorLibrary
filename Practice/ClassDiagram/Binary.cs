@@ -5,13 +5,15 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Binary
+    public abstract class Binary : IOperation
     {
-        public void AssignNumberOfOperands()
+        public double NumberOfOperands   // property
         {
-            throw new System.NotImplementedException();
+            get { return NumberOfOperands; }
+            set { NumberOfOperands = 2; }
         }
 
-      
+
+        abstract public double Calculate(double[] listOfOperands);
     }
 }

@@ -7,6 +7,10 @@ namespace ClassDiagram
 {
     public interface IOperation
     {
-        void operandNumber();
+         double NumberOfOperands
+        {
+            get; 
+        }
+        double Calculate(double[] listOfOperands);
     }
 }

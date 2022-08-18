@@ -7,9 +7,27 @@ namespace ClassDiagram
 {
     public class Addition : Binary
     {
-        public double Add(double a, double b)
+        override public double Calculate(double[] listOfOperands)
         {
-            throw new System.NotImplementedException();
+            try
+            {
+                if (listOfOperands.Length == 0 || listOfOperands.Length > 2)
+                {
+                    throw e;//new InvalidOperationException("Invalid operation");
+                }
+
+                double firstOperand = listOfOperands[0];
+                double secondOperand = listOfOperands[1];
+                return firstOperand + secondOperand;
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+   
+
+            return 0;
+
         }
     }
 }

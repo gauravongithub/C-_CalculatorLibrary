@@ -5,19 +5,14 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Unary
+    public abstract class Unary : IOperation
     {
-        public IOperation IOperation
+        public double NumberOfOperands
         {
-            get => default;
-            set
-            {
-            }
+            get { return NumberOfOperands; }
+            set { NumberOfOperands = 1; }
         }
+        abstract public double Calculate(double[] NumberOfOperands);
 
-        public void AssignNumberOfOoperands()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
