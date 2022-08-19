@@ -7,11 +7,16 @@ namespace ClassDiagram
 {
     public abstract class Unary : IOperation
     {
-        public double NumberOfOperands
+        public int NumberOfOperands
         {
-            get { return NumberOfOperands; }
-            set { NumberOfOperands = 1; }
+            get;set;
         }
+        public Unary()
+        {
+            NumberOfOperands = 1;
+        }
+
+        
         abstract public double Calculate(double[] NumberOfOperands);
 
     }

@@ -7,8 +7,10 @@ namespace ClassDiagram
 {
     public class Cos : Unary
     {
-        public double FindCosValue(double RadianOrDegree)
+        public override double Calculate(double[] listOfOperand)
         {
+            return Math.Cos(listOfOperand[0]);
+
             throw new System.NotImplementedException();
         }
     }

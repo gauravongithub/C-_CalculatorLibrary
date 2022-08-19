@@ -7,8 +7,9 @@ namespace ClassDiagram
 {
     public class Sin : Unary
     {
-        public double FindSinValue(double value)
+        override public double Calculate(double[] listOfOperands)
         {
+            return Math.Sin(listOfOperands[0]);
             throw new System.NotImplementedException();
         }
     }

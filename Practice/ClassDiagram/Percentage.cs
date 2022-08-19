@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Addition : Binary
+    public class Percentage : Binary
     {
         override public double Calculate(double[] listOfOperands)
         {
@@ -13,18 +13,15 @@ namespace ClassDiagram
             double firstOperand = listOfOperands[0];
             double secondOperand = listOfOperands[1];
 
-            if (listOfOperands.Length !=2)
+            if (listOfOperands.Length != 2)
             {
                 throw new InvalidTypesOfOperands("Invalid Number of Arguments");
             }
-            if(Double.IsInfinity(firstOperand + secondOperand))
+            else if (Double.IsInfinity(firstOperand + secondOperand))
             {
                 throw new MemoryLimitExceeded("Answer exceeds memory limit");
             }
-
-            
-            return firstOperand + secondOperand;
+            return firstOperand%secondOperand;
         }
-
     }
 }

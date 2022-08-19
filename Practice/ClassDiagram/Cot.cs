@@ -5,11 +5,11 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public class Tan : Unary
+    public class Cot : Unary
     {
-        override public double Calculate(double[] listOfOperands)
+        public override double Calculate(double[] listOfOperands)
         {
-            Math.Tan(listOfOperands[0]);
+            return 1/Math.Tan(listOfOperands[0]);
             throw new System.NotImplementedException();
         }
     }

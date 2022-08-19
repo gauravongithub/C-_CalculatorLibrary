@@ -9,25 +9,15 @@ namespace ClassDiagram
     {
         override public double Calculate(double[] listOfOperands)
         {
-            try
+            double firstOperand = listOfOperands[0];
+            double secondOperand = listOfOperands[1];
+            if (listOfOperands.Length == 0 || listOfOperands.Length > 2)
             {
-                if (listOfOperands.Length == 0 || listOfOperands.Length > 2)
-                {
-                    throw e;//new InvalidOperationException("Invalid operation");
-                }
-
-                double firstOperand = listOfOperands[0];
-                double secondOperand = listOfOperands[1];
-                return firstOperand - secondOperand;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
+                throw new InvalidNumberOfOperands("For every such case I will write only one Error message and that is in the InvalidNumberOfOperands only");
             }
 
-
-            return 0;
-
+            return firstOperand - secondOperand;
         }
+
     }
 }

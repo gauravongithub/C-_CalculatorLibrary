@@ -7,12 +7,15 @@ namespace ClassDiagram
 {
     public abstract class Binary : IOperation
     {
-        public double NumberOfOperands   // property
+        public int NumberOfOperands
         {
-            get { return NumberOfOperands; }
-            set { NumberOfOperands = 2; }
+            get;set;
         }
 
+       public Binary()
+        {
+            NumberOfOperands = 2;
+        }
 
         abstract public double Calculate(double[] listOfOperands);
     }

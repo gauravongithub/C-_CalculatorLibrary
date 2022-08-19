@@ -5,12 +5,11 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public interface IOperation
+    public class MemoryLimitExceeded : ExceptionHandling
     {
-         int NumberOfOperands
+        public MemoryLimitExceeded(string message)
         {
-            get; 
+            Console.WriteLine(message);
         }
-        double Calculate(double[] listOfOperands);
     }
 }

@@ -9,25 +9,15 @@ namespace ClassDiagram
     {
         override public double Calculate(double[] listOfOperands)
         {
-            try
-            {
-                if (listOfOperands.Length == 0 || listOfOperands.Length > 2 || listOfOperands[1]==0)
-                {
-                    throw e;//new InvalidOperationException("Invalid operation");
-                }
 
-                double firstOperand = listOfOperands[0];
-                double secondOperand = listOfOperands[1];
-                return firstOperand / secondOperand;
-            }
-            catch (Exception ex)
+            if (listOfOperands.Length == 0 || listOfOperands.Length > 2 || listOfOperands[1] == 0)
             {
-                Console.WriteLine(ex.Message);
+                throw new DivideByZeroException("You cannot divide a number by 0");
             }
 
-
-            return 0;
-
+            double firstOperand = listOfOperands[0];
+            double secondOperand = listOfOperands[1];
+            return firstOperand / secondOperand;
         }
     }
 }

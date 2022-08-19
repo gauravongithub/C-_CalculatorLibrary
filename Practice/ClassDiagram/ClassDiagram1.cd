@@ -1,23 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="ClassDiagram.Subtraction" Collapsed="true">
-    <Position X="6.25" Y="5" Width="1.5" />
+  <Class Name="ClassDiagram.PowerFunction" Collapsed="true">
+    <Position X="7.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Subtraction.cs</FileName>
-      <NewMemberFileName>Addition.cs</NewMemberFileName>
+      <FileName>PowerFunction.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ClassDiagram.Binary">
-    <Position X="8.75" Y="2.5" Width="1.5" />
+  <Class Name="ClassDiagram.Binary" Collapsed="true">
+    <Position X="10" Y="6.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>Binary.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.492" />
   </Class>
-  <Class Name="ClassDiagram.Unary">
-    <Position X="3.25" Y="2.75" Width="1.5" />
+  <Class Name="ClassDiagram.Unary" Collapsed="true">
+    <Position X="4.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>Unary.cs</FileName>
@@ -25,12 +24,12 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="ClassDiagram.EvaluatorClass" HideInheritanceLine="true">
-    <Position X="0.75" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <Compartments>
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAIAAAJAAAAAAAACAAAAAAAQIAAAAAAAA=</HashCode>
       <FileName>EvaluatorClass.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -42,35 +41,36 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ClassDiagram.Sin" Collapsed="true">
-    <Position X="3.25" Y="4.5" Width="1.5" />
+    <Position X="3.5" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Sin.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="ClassDiagram.Cos" Collapsed="true">
-    <Position X="3.25" Y="6" Width="1.5" />
+  <Class Name="ClassDiagram.Cot" Collapsed="true">
+    <Position X="5.25" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Cos.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cot.cs</FileName>
+      <NewMemberFileName>Cos.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassDiagram.Tan" Collapsed="true">
-    <Position X="3.25" Y="7.5" Width="1.5" />
+    <Position X="3.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Tan.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassDiagram.Addition" Collapsed="true">
-    <Position X="8" Y="5" Width="1.5" />
+    <Position X="9.25" Y="8.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Addition.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassDiagram.Division" Collapsed="true">
-    <Position X="6.25" Y="6" Width="1.5" />
+    <Position X="7.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Division.cs</FileName>
@@ -78,15 +78,94 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ClassDiagram.Multiplication" Collapsed="true">
-    <Position X="8" Y="6" Width="1.5" />
+    <Position X="9.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Multiplication.cs</FileName>
       <NewMemberFileName>Addition.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
-  <Interface Name="ClassDiagram.IOperation">
-    <Position X="6.25" Y="0.5" Width="1.5" />
+  <Class Name="ClassDiagram.ExceptionHandling">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BinaryExceptionHandling.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.Subtraction" Collapsed="true">
+    <Position X="7.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Subtraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.Sec" Collapsed="true">
+    <Position X="5.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sec.cs</FileName>
+      <NewMemberFileName>Cos.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.Cosec" Collapsed="true">
+    <Position X="3.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cosec.cs</FileName>
+      <NewMemberFileName>Cos.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.Cos" Collapsed="true">
+    <Position X="5.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.UnknownOperatorsException" Collapsed="true">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UnknownOperatorsException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.MemoryLimitExceeded" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MemoryLimitExceeded.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.InvalidNumberOfOperands" Collapsed="true">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvalidNumberOfOperands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.InvalidTypesOfOperands" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvalidTypesOfOperands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.Percentage" Collapsed="true">
+    <Position X="9.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Percentage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.Token">
+    <Position X="13.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Token.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="ClassDiagram.IOperation" Collapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>IOperation.cs</FileName>
