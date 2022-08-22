@@ -29,14 +29,14 @@
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIAAAJAAAAAAAACAAAAAAAQIAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAACAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>EvaluatorClass.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassDiagram.Parser" HideInheritanceLine="true">
     <Position X="0.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>parser.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -158,9 +158,16 @@
     </TypeIdentifier>
   </Class>
   <Class Name="ClassDiagram.Token">
-    <Position X="13.5" Y="5.5" Width="1.5" />
+    <Position X="4" Y="4" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="ClassDiagram.Token.Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Token.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAA=</HashCode>
       <FileName>Token.cs</FileName>
     </TypeIdentifier>
   </Class>

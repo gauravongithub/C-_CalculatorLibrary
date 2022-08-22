@@ -3,35 +3,39 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-namespace testing
+using System.IO;
+using Newtonsoft.Json;
+namespace CSharpTutorials
 {
-
-    public class A
+    public class OperatorStructure
     {
-        public void Fun()
-        {
-            Console.Write("This is function A");
-        }
+        public string value { get; set; }
+        public string display { get; set;}
+
+        public int precedence {get; set;}
     }
 
-    public class B
+    public class Operators
     {
-        public void Fun2()
-        {
-            Console.Write("This is Function B");
-        }
-
-
+        public List<OperatorStructure> operators { get; set; }
     }
 
-    internal class Program
+    class TesterProgram
     {
         static void Main(string[] args)
         {
-           A a = new A();
-            a.Fun();
-            Console.ReadKey();
-        }    
+            string json = File.ReadAllText("PrecedenceFileJSON.json");
+            var precedenceFileJSON = JsonConvert.DeserializeObject<Dictionary<string, OperatorStructure>>(json);
+
+            foreach (var precedenceFile in precedenceFileJSON)
+            {
+                Console.WriteLine("{0}  {1} {2} {3}",precedenceFile.Key, precedenceFile.Value.value, precedenceFile.Value.display,precedenceFile.Value.precedence);
+            }
+            Console.ReadLine();
+            
+        }
+        
     }
+
+
 }

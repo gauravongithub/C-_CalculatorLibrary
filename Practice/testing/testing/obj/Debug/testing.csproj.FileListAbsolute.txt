@@ -6,3 +6,7 @@ C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\Practice\testing\testing\obj
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\Practice\testing\testing\obj\Debug\testing.csproj.CoreCompileInputs.cache
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\Practice\testing\testing\obj\Debug\testing.exe
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\Practice\testing\testing\obj\Debug\testing.pdb
+C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\Practice\testing\testing\bin\Debug\Json.Net.dll
+C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\Practice\testing\testing\bin\Debug\Newtonsoft.Json.dll
+C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\Practice\testing\testing\bin\Debug\Newtonsoft.Json.xml
+C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\Practice\testing\testing\obj\Debug\testing.csproj.CopyComplete

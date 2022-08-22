@@ -1,0 +1,73 @@
+{
+  "+":{
+    "value": "+",
+    "display": "+",
+    "precedence": 1
+  },
+  "-" :
+  {
+    "value": "-",
+    "display": "-",
+    "precedence": 1
+  },
+  "*":
+  {
+    "value": "*",
+    "display": "*",
+    "precedence": 2
+  },
+  "/":
+  {
+    "value": "/",
+    "display": "/",
+    "precedence": 2
+  },
+  "^":
+  {
+    "value": "^",
+    "display": "^",
+    "precedence": 3
+  },
+  "sin":
+  {
+    "value": "sin",
+    "display": "sin",
+    "precedence": 4
+  },
+  "cos":
+  {
+    "value": "cos",
+    "display": "cos",
+    "precedence": 4
+  },
+  "tan":
+  {
+    "value": "tan",
+    "display": "tan",
+    "precedence": 4
+  },
+  "cot":
+  {
+    "value": "cot",
+    "display": "cot",
+    "precedence": 4
+  },
+  "sec":
+  {
+    "value": "sec",
+    "display": "sec",
+    "precedence": 4
+  },
+  "cosec":
+  {
+    "value": "cosec",
+    "display": "cosec",
+    "precedence": 4
+  },
+  "%" :
+  {
+    "value": "%",
+    "display": "%",
+    "precedence": 2
+  }
+}
