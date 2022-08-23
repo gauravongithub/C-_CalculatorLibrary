@@ -7,7 +7,7 @@ namespace ClassDiagram
 {
     public class Cos : Unary
     {
-        public override double Calculate(double[] listOfOperand)
+        protected override double Calculate(double[] listOfOperand)
         {
             return Math.Cos(listOfOperand[0]);
 

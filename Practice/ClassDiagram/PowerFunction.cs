@@ -7,8 +7,9 @@ namespace ClassDiagram
 {
     public class PowerFunction : Binary
     {
-        override public double Calculate(double[] listOfOperands)
+        override protected double Calculate(double[] listOfOperands)
         {
+            if (listOfOperands == null) throw new ArgumentNullException();
             double firstOperand = listOfOperands[0];
             double secondOperand = listOfOperands[1];
  

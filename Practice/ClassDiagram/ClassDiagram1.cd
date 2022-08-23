@@ -10,7 +10,7 @@
   <Class Name="ClassDiagram.Binary" Collapsed="true">
     <Position X="10" Y="6.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAACAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>Binary.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.492" />
@@ -18,7 +18,7 @@
   <Class Name="ClassDiagram.Unary" Collapsed="true">
     <Position X="4.5" Y="6.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAACAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>Unary.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -29,15 +29,8 @@
       <Compartment Name="Methods" Collapsed="true" />
     </Compartments>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAACAAAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAQAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>EvaluatorClass.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="ClassDiagram.Parser" HideInheritanceLine="true">
-    <Position X="0.5" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAEAAAAAAAQAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>parser.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="ClassDiagram.Sin" Collapsed="true">
@@ -167,14 +160,29 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAACAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgA=</HashCode>
       <FileName>Token.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.OperatorPrecedence">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OperatorPrecedence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.Parser" HideInheritanceLine="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Parser.cs</FileName>
+      <NewMemberFileName>parser.cs</NewMemberFileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="ClassDiagram.IOperation" Collapsed="true">
     <Position X="8" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAQAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAA=</HashCode>
       <FileName>IOperation.cs</FileName>
     </TypeIdentifier>
   </Interface>

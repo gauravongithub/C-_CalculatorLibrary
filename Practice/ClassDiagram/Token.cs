@@ -13,8 +13,8 @@ namespace ClassDiagram
             Operand
         };
 
-        public object values { get; set;}
-        public Type tokenType { get; set;}
+        public object Value { get; set;}
+        public Type TokenType { get; set;}
 
     }
 }

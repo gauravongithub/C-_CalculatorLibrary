@@ -7,7 +7,7 @@ namespace ClassDiagram
 {
     public class Cot : Unary
     {
-        public override double Calculate(double[] listOfOperands)
+        protected override double Calculate(double[] listOfOperands)
         {
             return 1/Math.Tan(listOfOperands[0]);
             throw new System.NotImplementedException();

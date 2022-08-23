@@ -1,21 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.IO;
 using System.Text.Json;
 
 
 namespace ClassDiagram
 {
-        public class Parser
+    public class Parser
     {
+        List<OperatorPrecedence> operatorsList = new List<OperatorPrecedence>();
+        Dictionary<string, OperatorPrecedence> operatorPrecedence = new Dictionary<string, OperatorPrecedence>();
         public List<Token> ConvertToTokens(string expression)
         {
             List<Token> listOfTokens = new List<Token>();
             for (int expressionIndex = 0; expressionIndex < expression.Length; expressionIndex++)
             {
-                string token = " ";
+                string token = String.Empty;
                 //If the encountered character is a number, then collect it
                 if (char.IsDigit(expression[expressionIndex]) || expression[expressionIndex] == '.')
                 {
@@ -38,77 +38,79 @@ namespace ClassDiagram
                 }
                 else
                 {
-                    while (!Char.IsDigit(expression[expressionIndex + 1]) || !expression[expressionIndex + 1] == '.')
-                    {      //checking if operator is present
+                    while (!Char.IsDigit(expression[expressionIndex + 1]) || (expression[expressionIndex + 1]) != '.')
+                    {
                         token += expression[expressionIndex];
                         expressionIndex++;
                     }
                     expressionIndex--;
                     listOfTokens.Add(new Token { Value = token, TokenType = Token.Type.Operator });
-                    token = "";
+                    token = String.Empty;
                 }
             }
             return listOfTokens;
         }
 
-        public static Dictionary<string, OperatorPrecedence> getPrecedenceTable()
+        public List<Token> Postfix(string expression)
         {
-            Dictionary<string, OperatorPrecedence> precedenceTable = new Dictionary<string, OperatorPrecedence>();
-            using (StreamReader s = new StreamReader("jsconfig1.json")) // To read json file
-            {
-                precedenceTable = JsonSerializer.Deserialize<Dictionary<string, OperatorPrecedence>>(s.ReadToEnd());
-            }
-            return precedenceTable;
-        }
-        public List<Token> Postfix(string expression, Dictionary<string, OperatorPrecedence> precedenceTable)
-        {
-            List<Token> listOfTokens = ConvertToTokens(expression);
-            Dictionary<string, OperatorPrecedence> operatorPrecedence = new Dictionary<string, OperatorPrecedence>();
+            List<Token> listOfTokens = ConvertToTokens(expression); // This will contain the list Of token after conversion into Tokens
             List<Token> postfixExpression = new List<Token>();
             Stack<Token> tokenStack = new Stack<Token>();
+
+
+            using (StreamReader s = new StreamReader("PrecedenceFileJSON.json"))
+            {
+                operatorsList = JsonSerializer.Deserialize<List<OperatorPrecedence>>(s.ReadToEnd());
+            }
+
+            foreach (OperatorPrecedence operatorDetails in operatorsList)
+            {
+                operatorPrecedence[operatorDetails.display] = operatorDetails;
+            }
+
+
             foreach (Token token in listOfTokens)
             {
                 if (token.TokenType == Token.Type.Operand)
                 {
                     postfixExpression.Add(token);
                 }
-                else if((string)token.Value == "(")
+                else if ((string)token.Value == "(")
                 {
                     tokenStack.Push(token);
-                }else if((string)token.Value == ")")
+                }
+                else if ((string)token.Value == ")")
                 {
-                    while(tokenStack.Count>0 && (string)tokenStack.Peek().Value != "(")
+                    while (tokenStack.Count > 0 && (string)tokenStack.Peek().Value != "(")
                     {
                         postfixExpression.Add(tokenStack.Pop());
                     }
-               
+                }
+                else
+
+
+                   //Agar mere waale operator ka precedence jyaada hai stack ke top pe pade operator se then push.
+                   if (operatorPrecedence[Convert.ToString(token.Value)].precedence <= operatorPrecedence[Convert.ToString(tokenStack.Peek())].precedence)
+                {
+                    tokenStack.Push(token);
                 }
                 else
                 {
-                    //Agar mere waale operator ka precedence jyaada hai stack ke top pe pade operator se then push.
-                    if(operatorPrecedence[Convert.ToString(token.Value)].precedence <= operatorPrecedence[Convert.ToString(tokenStack.Peek())].precedence)
+                    //else pop till my precedence becomes less than current operator
+                    while (operatorPrecedence[Convert.ToString(token.Value)].precedence > operatorPrecedence[Convert.ToString(tokenStack.Peek())].precedence)
                     {
-                        tokenStack.Push(token);
+                        postfixExpression.Add(tokenStack.Pop());
                     }
-                    else
-                    {
-                        //else pop till my precedence becomes less than current operator
-                        while(operatorPrecedence[Convert.ToString(token.Value)].precedence > operatorPrecedence[Convert.ToString(tokenStack.Peek())].precedence)
-                        {
-                            postfixExpression.Add(tokenStack.Pop());
-                        }
-                        tokenStack.Push(token);
-                    }
-                } 
-
+                    tokenStack.Push(token);
+                }
             }
-            while(tokenStack.Count>=0)
+
+            while (tokenStack.Count >= 0)
             {
                 postfixExpression.Add(tokenStack.Pop());
             }
             return postfixExpression;
         }
+
     }
-
-
 }

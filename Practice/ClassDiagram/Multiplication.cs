@@ -7,10 +7,12 @@ namespace ClassDiagram
 {
     public class Multiplication : Binary
     {
-        override public double Calculate(double[] listOfOperands)
+        override protected double Calculate(double[] listOfOperands)
         {
-                double firstOperand = listOfOperands[0];
-                double secondOperand = listOfOperands[1];
+ 
+            double firstOperand = listOfOperands[0];
+            double secondOperand = listOfOperands[1];
+            if (Double.IsInfinity(firstOperand * secondOperand)) throw new MemoryLimitExceeded("You have exceeded memory limit");
 
 
             return firstOperand*secondOperand;

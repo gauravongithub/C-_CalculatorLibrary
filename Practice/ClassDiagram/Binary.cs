@@ -20,6 +20,7 @@ namespace ClassDiagram
 
         public double Evaluate(double[] values)
         {
+            if (values == null) throw new ArgumentNullException();
             if (NumberOfOperands != values.Length)
                 throw new InvalidNumberOfOperands("Invalid Number of Operands");
 
