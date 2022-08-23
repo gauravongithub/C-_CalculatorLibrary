@@ -9,7 +9,7 @@ namespace ClassDiagram
     {
         public int NumberOfOperands
         {
-            get;set;
+            get;
         }
 
        public Binary()
@@ -17,6 +17,17 @@ namespace ClassDiagram
             NumberOfOperands = 2;
         }
 
-        abstract public double Calculate(double[] listOfOperands);
+
+        public double Evaluate(double[] values)
+        {
+            if (NumberOfOperands != values.Length)
+                throw new InvalidNumberOfOperands("Invalid Number of Operands");
+
+            return Calculate(values);
+        }
+
+
+
+        protected abstract double Calculate(double[] listOfOperands);
     }
 }

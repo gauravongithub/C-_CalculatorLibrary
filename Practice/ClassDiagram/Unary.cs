@@ -5,19 +5,26 @@ using System.Text;
 
 namespace ClassDiagram
 {
-    public abstract class Unary : IOperation
+   public abstract class Unary : IOperation
     {
         public int NumberOfOperands
         {
-            get;set;
+            get;
         }
-        public Unary()
+
+       public Unary()
         {
             NumberOfOperands = 1;
         }
 
-        
-        abstract public double Calculate(double[] NumberOfOperands);
+        public double Evaluate(double[] values)
+        {
+            if (NumberOfOperands != values.Length)
+                throw new InvalidNumberOfOperands("Invalid Number of Operands");
 
+            return Calculate(values);
+        }
+
+        protected abstract double Calculate(double[] listOfOperands);
     }
 }

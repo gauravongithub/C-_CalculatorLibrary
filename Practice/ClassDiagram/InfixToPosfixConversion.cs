@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace ClassDiagram
 {
-
+    
     public class OperatorStructure
     {
         private string _value;

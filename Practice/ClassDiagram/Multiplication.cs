@@ -9,17 +9,11 @@ namespace ClassDiagram
     {
         override public double Calculate(double[] listOfOperands)
         {
-       
-               
-
                 double firstOperand = listOfOperands[0];
                 double secondOperand = listOfOperands[1];
 
-            if (listOfOperands.Length == 0 || listOfOperands.Length > 2)
-            {
-                throw new InvalidNumberOfOperands("You have entered invalid number of arguments");
-            }
-            return f;
+
+            return firstOperand*secondOperand;
 
         }
     }

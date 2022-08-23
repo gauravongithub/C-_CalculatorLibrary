@@ -9,15 +9,10 @@ namespace ClassDiagram
     {
         override public double Calculate(double[] listOfOperands)
         {
-
             double firstOperand = listOfOperands[0];
             double secondOperand = listOfOperands[1];
 
-            if (listOfOperands.Length != 2)
-            {
-                throw new InvalidTypesOfOperands("Invalid Number of Arguments");
-            }
-            else if (Double.IsInfinity(firstOperand + secondOperand))
+            if (Double.IsInfinity(firstOperand + secondOperand))
             {
                 throw new MemoryLimitExceeded("Answer exceeds memory limit");
             }

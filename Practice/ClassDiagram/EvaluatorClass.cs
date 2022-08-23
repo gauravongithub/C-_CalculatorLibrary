@@ -5,25 +5,15 @@ using System.Text;
 
 namespace ClassDiagram
 { 
-    
-    public class EvaluatorClass : Binary
+    public class EvaluatorClass
     {
-        public string[] ParseString(string result)
+       public Dictionary<string,IOperation> dictionary = new Dictionary<string,IOperation>();
+        Parser parser = new Parser();
+
+        public double Evaluate(string expression)
         {
-            
-            throw new System.NotImplementedException();
+            List<Token> Token = parser.Postfix(expression); 
         }
 
-        public double FindAndInsertOperatorFunctionality(double operand1, double operand2, string parsedOperator)
-        {
-
-            Dictionary<string, int> d = new Dictionary<string, int>();
-            throw new System.NotImplementedException();
-        }
-
-        public override double Calculate(double[] listOfOperands)
-        {
-            throw new NotImplementedException();
-        }
     }
 }

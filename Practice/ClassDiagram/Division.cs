@@ -10,7 +10,7 @@ namespace ClassDiagram
         override public double Calculate(double[] listOfOperands)
         {
 
-            if (listOfOperands.Length == 0 || listOfOperands.Length > 2 || listOfOperands[1] == 0)
+            if (listOfOperands[1] == 0)
             {
                 throw new DivideByZeroException("You cannot divide a number by 0");
             }
