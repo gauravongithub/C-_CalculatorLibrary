@@ -19,14 +19,14 @@ namespace ClassDiagram
                 //If the encountered character is a number, then collect it
                 if (char.IsDigit(expression[expressionIndex]) || expression[expressionIndex] == '.')
                 {
-                    while ((Char.IsDigit(expression[expressionIndex + 1]) || expression[expressionIndex + 1] == '.'))
+                    while ((Char.IsDigit(expression[expressionIndex]) || expression[expressionIndex] == '.'))
                     {
                         token += expression[expressionIndex];
                         expressionIndex++;
                     }
                     expressionIndex--;
                     listOfTokens.Add(new Token { Value = Double.Parse(token), TokenType = Token.Type.Operand });
-                    token = "";
+                    token = String.Empty;
                 }
                 else if (expression[expressionIndex] == '(')
                 {
@@ -38,12 +38,17 @@ namespace ClassDiagram
                 }
                 else
                 {
-                    while (!Char.IsDigit(expression[expressionIndex + 1]) || (expression[expressionIndex + 1]) != '.')
+                    while(expressionIndex < expression.Length && expression[expressionIndex]!='.' && char.IsDigit(expression[expressionIndex]))
                     {
                         token += expression[expressionIndex];
-                        expressionIndex++;
+
+                        if(operatorPrecedence.ContainsKey(token.Trim()))
+                        {
+                            break;
+                            expressionIndex++;
+                        }
+                        expressionIndex--;
                     }
-                    expressionIndex--;
                     listOfTokens.Add(new Token { Value = token, TokenType = Token.Type.Operator });
                     token = String.Empty;
                 }
