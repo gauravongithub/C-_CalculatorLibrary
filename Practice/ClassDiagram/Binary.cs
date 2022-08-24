@@ -19,20 +19,15 @@ namespace CalculatorLibrary
             NumberOfOperands = 2;
         }
 
-
+public ResourceManager rm = new ResourceManager("CalculateLibrary.Resource1", Assembly.GetExecutingAssembly());
         public double Evaluate(double[] values)
         {
-            //ResourceManager rm = new ResourceManager("CalculateLibrary.Resource1", Assembly.GetExecutingAssembly());
             if (values == null) throw new ArgumentNullException();
             if (NumberOfOperands != values.Length)
-              //  throw new InvalidNumberOfOperands(string.Format(rm.GetString("InvalidNumberOfOperands")));
-            throw new InvalidNumberOfOperands("Invalid Number of Operands");
+               throw new InvalidNumberOfOperands(string.Format(rm.GetString("InvalidNumberOfOperands")));
 
             return Calculate(values);
         }
-
-
-
         protected abstract double Calculate(double[] listOfOperands);
     }
 }

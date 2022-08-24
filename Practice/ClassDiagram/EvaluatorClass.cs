@@ -11,7 +11,7 @@ namespace CalculatorLibrary
         Dictionary<string, IOperation> operations = new Dictionary<string, IOperation>();
         List<OperatorPrecedence> operatorDetails = new List<OperatorPrecedence>();
 
-        Stack<Token> operandStack = new Stack<Token>();
+        Stack<double> operandStack = new Stack<double>();
         public double Evaluate(string expression)
         {
             List<Token> tokenlist = parserObject.Postfix(expression);
@@ -22,7 +22,7 @@ namespace CalculatorLibrary
             {
                 if(token.TokenType == Token.Type.Operand)
                 {
-                    operandStack.Push(token);
+                    operandStack.Push(token.Value);
                 }
                 else if(token.TokenType == Token.Type.Operator)
                 {
@@ -36,12 +36,21 @@ namespace CalculatorLibrary
                         operations[Convert.ToString(token.Value)] = (IOperation)instance;
                     }
                 }
+
+                int operandCount = operations[Convert.ToString(token.Value)].NumberOfOperands;
+                double[] listOfOperands = new double[operandCount];
+
+                for(int operandIndex=0;operandIndex < operandCount;operandIndex++)
+                {
+                    listOfOperands[operandIndex] = operandStack.Pop();
+                }
+
+                Array.Reverse(listOfOperands);
+
+                double temporaryResult = operations[Convert.ToString(token.Value)].Evaluate(listOfOperands);
+                operandStack.Push(temporaryResult);
             }
-            
-            return 11.6;
+            return operandStack.Pop();
         }
-
     }
-
-
 }

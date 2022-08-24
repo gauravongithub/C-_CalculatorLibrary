@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.Json;
 
-
 namespace CalculatorLibrary
 {
     public class Parser
@@ -94,7 +93,6 @@ namespace CalculatorLibrary
                     if (tokenStack.Count > 0 && (string)tokenStack.Peek().Value != ")")
                     {
                         throw new Exception("Invalid expression");
-
                     }
                 }
                 else
@@ -118,11 +116,5 @@ namespace CalculatorLibrary
         {
             return operatorsList;
         }
-
-        //public Dictionary<string, OperatorPrecedence> getOperationDetails()
-        //{
-        //    return operatorPrecedence;
-        //}
-
     }
 }
