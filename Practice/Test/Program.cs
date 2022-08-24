@@ -15,7 +15,7 @@ namespace Test
             EvaluatorClass evaluatorClass = new EvaluatorClass();
             evaluatorClass.Evaluate(express);
             Console.WriteLine("Done");
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }

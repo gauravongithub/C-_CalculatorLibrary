@@ -19,7 +19,7 @@ namespace ClassDiagram
                 //If the encountered character is a number, then collect it
                 if (char.IsDigit(expression[expressionIndex]) || expression[expressionIndex] == '.')
                 {
-                    while ((Char.IsDigit(expression[expressionIndex]) || expression[expressionIndex] == '.'))
+                    while (expressionIndex < expression.Length && (Char.IsDigit(expression[expressionIndex]) || expression[expressionIndex] == '.'))
                     {
                         token += expression[expressionIndex];
                         expressionIndex++;
@@ -38,17 +38,18 @@ namespace ClassDiagram
                 }
                 else
                 {
-                    while(expressionIndex < expression.Length && expression[expressionIndex]!='.' && char.IsDigit(expression[expressionIndex]))
+                    while (expressionIndex < expression.Length && expression[expressionIndex] != '.' && !char.IsDigit(expression[expressionIndex]))
                     {
                         token += expression[expressionIndex];
 
-                        if(operatorPrecedence.ContainsKey(token.Trim()))
+                        if (operatorPrecedence.ContainsKey(token.Trim()))
                         {
-                            break;
                             expressionIndex++;
+                            break;
                         }
-                        expressionIndex--;
+                        expressionIndex++;
                     }
+                    expressionIndex--;
                     listOfTokens.Add(new Token { Value = token, TokenType = Token.Type.Operator });
                     token = String.Empty;
                 }
@@ -58,20 +59,20 @@ namespace ClassDiagram
 
         public List<Token> Postfix(string expression)
         {
-            List<Token> listOfTokens = ConvertToTokens(expression); // This will contain the list Of token after conversion into Tokens
-            List<Token> postfixExpression = new List<Token>();
-            Stack<Token> tokenStack = new Stack<Token>();
-
 
             using (StreamReader s = new StreamReader("PrecedenceFileJSON.json"))
             {
                 operatorsList = JsonSerializer.Deserialize<List<OperatorPrecedence>>(s.ReadToEnd());
             }
 
-            foreach (OperatorPrecedence operatorDetails in operatorsList)
+            foreach (OperatorPrecedence detailsOfOperators in operatorsList)
             {
-                operatorPrecedence[operatorDetails.display] = operatorDetails;
+                operatorPrecedence[detailsOfOperators.display] = detailsOfOperators;
             }
+
+            List<Token> listOfTokens = ConvertToTokens(expression); // This will contain the list Of token after conversion into Tokens
+            List<Token> postfixExpression = new List<Token>();
+            Stack<Token> tokenStack = new Stack<Token>();
 
 
             foreach (Token token in listOfTokens)
@@ -90,32 +91,27 @@ namespace ClassDiagram
                     {
                         postfixExpression.Add(tokenStack.Pop());
                     }
-                }
-                else
+                    if (tokenStack.Count > 0 && (string)tokenStack.Peek().Value != ")")
+                    {
+                        throw new Exception("Invalid expression");
 
-
-                   //Agar mere waale operator ka precedence jyaada hai stack ke top pe pade operator se then push.
-                   if (operatorPrecedence[Convert.ToString(token.Value)].precedence <= operatorPrecedence[Convert.ToString(tokenStack.Peek())].precedence)
-                {
-                    tokenStack.Push(token);
+                    }
                 }
                 else
                 {
-                    //else pop till my precedence becomes less than current operator
-                    while (operatorPrecedence[Convert.ToString(token.Value)].precedence > operatorPrecedence[Convert.ToString(tokenStack.Peek())].precedence)
+
+                    while (tokenStack.Count > 0 && operatorPrecedence[Convert.ToString(token.Value)].precedence <= operatorPrecedence[Convert.ToString(tokenStack.Peek())].precedence)
                     {
                         postfixExpression.Add(tokenStack.Pop());
                     }
                     tokenStack.Push(token);
                 }
             }
-
-            while (tokenStack.Count >= 0)
+            while (tokenStack.Count > 0)
             {
                 postfixExpression.Add(tokenStack.Pop());
             }
             return postfixExpression;
         }
-
     }
 }

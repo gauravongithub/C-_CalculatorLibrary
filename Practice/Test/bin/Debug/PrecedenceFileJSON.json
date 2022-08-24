@@ -1,0 +1,64 @@
+[
+  {
+    "className": "Addition.cs",
+    "display": "+",
+    "precedence": 1
+  },
+
+  {
+    "className": "Subtraction.cs",
+    "display": "-",
+    "precedence": 1
+  },
+
+  {
+    "className": "Multiplication.cs",
+    "display": "*",
+    "precedence": 2
+  },
+  {
+    "className": "Division.cs",
+    "display": "/",
+    "precedence": 2
+  },
+  {
+    "className": "PowerFunction.cs",
+    "display": "^",
+    "precedence": 3
+  },
+  {
+    "className": "Sin.cs",
+    "display": "sin",
+    "precedence": 4
+  },
+  {
+    "className": "Cos.cs",
+    "display": "cos",
+    "precedence": 4
+  },
+  {
+    "className": "Tan.cs",
+    "display": "tan",
+    "precedence": 4
+  },
+  {
+    "className": "Cot.cs",
+    "display": "cot",
+    "precedence": 4
+  },
+  {
+    "className": "Sec.cs",
+    "display": "sec",
+    "precedence": 4
+  },
+  {
+    "className": "Cosec.cs",
+    "display": "cosec",
+    "precedence": 4
+  },
+  {
+    "className": "Percentage.cs",
+    "display": "%",
+    "precedence": 2
+  }
+]

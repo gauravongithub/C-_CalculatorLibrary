@@ -7,8 +7,8 @@ namespace ClassDiagram
 {
     public class OperatorPrecedence
     {
-        public string className {get;}
-        public int precedence { get; }
-        public string display { get; }
+        public string className { get; set; }
+        public int precedence { get; set; }
+        public string display { get; set; }
     }
 }
