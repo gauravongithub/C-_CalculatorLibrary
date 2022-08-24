@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Resources;
+using System.Reflection;
 
-namespace ClassDiagram
+namespace CalculatorLibrary
 {
     public abstract class Binary : IOperation
     {
@@ -20,9 +22,11 @@ namespace ClassDiagram
 
         public double Evaluate(double[] values)
         {
+            //ResourceManager rm = new ResourceManager("CalculateLibrary.Resource1", Assembly.GetExecutingAssembly());
             if (values == null) throw new ArgumentNullException();
             if (NumberOfOperands != values.Length)
-                throw new InvalidNumberOfOperands("Invalid Number of Operands");
+              //  throw new InvalidNumberOfOperands(string.Format(rm.GetString("InvalidNumberOfOperands")));
+            throw new InvalidNumberOfOperands("Invalid Number of Operands");
 
             return Calculate(values);
         }

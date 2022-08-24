@@ -4,7 +4,7 @@ using System.IO;
 using System.Text.Json;
 
 
-namespace ClassDiagram
+namespace CalculatorLibrary
 {
     public class Parser
     {
@@ -60,7 +60,7 @@ namespace ClassDiagram
         public List<Token> Postfix(string expression)
         {
 
-            using (StreamReader s = new StreamReader("PrecedenceFileJSON.json"))
+            using (StreamReader s = new StreamReader("../../../PrecedenceFile.json"))
             {
                 operatorsList = JsonSerializer.Deserialize<List<OperatorPrecedence>>(s.ReadToEnd());
             }
@@ -70,7 +70,7 @@ namespace ClassDiagram
                 operatorPrecedence[detailsOfOperators.display] = detailsOfOperators;
             }
 
-            List<Token> listOfTokens = ConvertToTokens(expression); // This will contain the list Of token after conversion into Tokens
+            List<Token> listOfTokens = ConvertToTokens(expression); 
             List<Token> postfixExpression = new List<Token>();
             Stack<Token> tokenStack = new Stack<Token>();
 
@@ -113,5 +113,16 @@ namespace ClassDiagram
             }
             return postfixExpression;
         }
+
+        public List<OperatorPrecedence> getOperatorDetails()
+        {
+            return operatorsList;
+        }
+
+        //public Dictionary<string, OperatorPrecedence> getOperationDetails()
+        //{
+        //    return operatorPrecedence;
+        //}
+
     }
 }
