@@ -98,7 +98,7 @@ namespace CalculatorLibrary
                 else
                 {
 
-                    while (tokenStack.Count > 0 && operatorPrecedence[Convert.ToString(token.Value)].precedence <= operatorPrecedence[Convert.ToString(tokenStack.Peek())].precedence)
+                    while (tokenStack.Count > 0 && operatorPrecedence[Convert.ToString(token.Value)].precedence <= operatorPrecedence[Convert.ToString(tokenStack.Peek().Value)].precedence)
                     {
                         postfixExpression.Add(tokenStack.Pop());
                     }

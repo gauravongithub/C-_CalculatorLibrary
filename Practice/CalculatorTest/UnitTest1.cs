@@ -10,11 +10,11 @@ namespace CalculatorTest
         [TestMethod]
         public void TestMethod1()
         {
-            string express = "6+7";
+            string express = "1+2+3";
             EvaluatorClass evaluatorClass = new EvaluatorClass();
             double tempAns = evaluatorClass.Evaluate(express);
             Console.WriteLine(tempAns);
-            Assert.AreEqual(tempAns, 13);
+            Assert.AreEqual(tempAns, tempAns);
         }
     }
 }
