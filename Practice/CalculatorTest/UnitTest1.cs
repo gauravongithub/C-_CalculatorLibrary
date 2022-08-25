@@ -10,7 +10,7 @@ namespace CalculatorTest
         [TestMethod]
         public void TestMethod1()
         {
-            string express = "1+2+3";
+            string express = "sin30";
             EvaluatorClass evaluatorClass = new EvaluatorClass();
             double tempAns = evaluatorClass.Evaluate(express);
             Console.WriteLine(tempAns);

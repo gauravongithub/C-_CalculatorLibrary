@@ -9,8 +9,7 @@ namespace CalculatorLibrary
     {
         protected override double Calculate(double[] listOfOperands)
         {
-            return 1/Math.Tan(listOfOperands[0]);
-            throw new System.NotImplementedException();
+            return 1/Math.Tan((Math.PI / 180)*listOfOperands[0]);
         }
     }
 }

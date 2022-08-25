@@ -9,8 +9,7 @@ namespace CalculatorLibrary
     {
         protected override double Calculate(double[] listOfOperand)
         {
-            return 1/Math.Cos(listOfOperand[0]);
-            throw new System.NotImplementedException();
+            return 1/Math.Cos((Math.PI / 180)*listOfOperand[0]);
         }
     }
 }
