@@ -1,63 +1,63 @@
 [
   {
-    "className": "Addition.cs",
+    "className": "CalculatorLibrary.Addition",
     "display": "+",
     "precedence": 1
   },
 
   {
-    "className": "Subtraction.cs",
+    "className": "CalculatorLibrary.Subtraction",
     "display": "-",
     "precedence": 1
   },
 
   {
-    "className": "Multiplication.cs",
+    "className": "CalculatorLibrary.Multiplication",
     "display": "*",
     "precedence": 2
   },
   {
-    "className": "Division.cs",
+    "className": "CalculatorLibrary.Division",
     "display": "/",
     "precedence": 2
   },
   {
-    "className": "PowerFunction.cs",
+    "className": "CalculatorLibrary.PowerFunction",
     "display": "^",
     "precedence": 3
   },
   {
-    "className": "Sin.cs",
+    "className": "CalculatorLibrary.Sin",
     "display": "sin",
     "precedence": 4
   },
   {
-    "className": "Cos.cs",
+    "className": "CalculatorLibrary.Cos",
     "display": "cos",
     "precedence": 4
   },
   {
-    "className": "Tan.cs",
+    "className": "CalculatorLibrary.Tan",
     "display": "tan",
     "precedence": 4
   },
   {
-    "className": "Cot.cs",
+    "className": "CalculatorLibrary.Cot",
     "display": "cot",
     "precedence": 4
   },
   {
-    "className": "Sec.cs",
+    "className": "CalculatorLibrary.Sec",
     "display": "sec",
     "precedence": 4
   },
   {
-    "className": "Cosec.cs",
+    "className": "CalculatorLibrary.Cosec",
     "display": "cosec",
     "precedence": 4
   },
   {
-    "className": "Percentage.cs",
+    "className": "CalculatorLibrary.Percentage",
     "display": "%",
     "precedence": 2
   }

@@ -112,9 +112,9 @@ namespace CalculatorLibrary
             return postfixExpression;
         }
 
-        public List<OperatorPrecedence> getOperatorDetails()
+        public Dictionary<string, OperatorPrecedence>  getOperatorDetails()
         {
-            return operatorsList;
+            return operatorPrecedence;
         }
     }
 }

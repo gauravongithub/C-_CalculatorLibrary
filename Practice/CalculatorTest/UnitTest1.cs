@@ -14,7 +14,7 @@ namespace CalculatorTest
             EvaluatorClass evaluatorClass = new EvaluatorClass();
             double tempAns = evaluatorClass.Evaluate(express);
             Console.WriteLine(tempAns);
-            Assert.AreEqual(tempAns, 11.6);
+            Assert.AreEqual(tempAns, 13);
         }
     }
 }

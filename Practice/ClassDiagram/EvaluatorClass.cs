@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 
 namespace CalculatorLibrary
-{ 
+{
     public class EvaluatorClass
     {
         Parser parserObject = new Parser();
         Dictionary<string, IOperation> operations = new Dictionary<string, IOperation>();
-        List<OperatorPrecedence> operatorDetails = new List<OperatorPrecedence>();
+        Dictionary<string, OperatorPrecedence> operatorDetails = new Dictionary<string, OperatorPrecedence>();
 
         Stack<double> operandStack = new Stack<double>();
         public double Evaluate(string expression)
@@ -20,11 +20,11 @@ namespace CalculatorLibrary
 
             foreach (Token token in tokenlist)
             {
-                if(token.TokenType == Token.Type.Operand)
+                if (token.TokenType == Token.Type.Operand)
                 {
-                    operandStack.Push(token.Value);
+                    operandStack.Push((double)token.Value);
                 }
-                else if(token.TokenType == Token.Type.Operator)
+                else if (token.TokenType == Token.Type.Operator)
                 {
                     if (operations.ContainsKey(Convert.ToString(token)))
                     {
@@ -32,23 +32,24 @@ namespace CalculatorLibrary
                     }
                     else
                     {
-                        instance = Activator.CreateInstance(Type.GetType(operations[Convert.ToString(token.Value)].className));
+                        instance = Activator.CreateInstance(Type.GetType(operatorDetails[(string)token.Value].className));
                         operations[Convert.ToString(token.Value)] = (IOperation)instance;
                     }
+
+
+                    int operandCount = operations[Convert.ToString(token.Value)].NumberOfOperands;
+                    double[] listOfOperands = new double[operandCount];
+
+                    for (int operandIndex = 0; operandIndex < operandCount; operandIndex++)
+                    {
+                        listOfOperands[operandIndex] = operandStack.Pop();
+                    }
+
+                    Array.Reverse(listOfOperands);
+
+                    double temporaryResult = operations[Convert.ToString(token.Value)].Evaluate(listOfOperands);
+                    operandStack.Push(temporaryResult);
                 }
-
-                int operandCount = operations[Convert.ToString(token.Value)].NumberOfOperands;
-                double[] listOfOperands = new double[operandCount];
-
-                for(int operandIndex=0;operandIndex < operandCount;operandIndex++)
-                {
-                    listOfOperands[operandIndex] = operandStack.Pop();
-                }
-
-                Array.Reverse(listOfOperands);
-
-                double temporaryResult = operations[Convert.ToString(token.Value)].Evaluate(listOfOperands);
-                operandStack.Push(temporaryResult);
             }
             return operandStack.Pop();
         }
