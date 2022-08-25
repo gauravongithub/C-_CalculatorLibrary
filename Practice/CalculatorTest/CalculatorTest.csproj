@@ -56,7 +56,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ClassDiagram\CalculatorLibrary.csproj">
+    <ProjectReference Include="..\CalculatorLibrary\CalculatorLibrary.csproj">
       <Project>{635627a2-6c35-4098-9015-126612154f97}</Project>
       <Name>CalculatorLibrary</Name>
     </ProjectReference>

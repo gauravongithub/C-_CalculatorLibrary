@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CalculatorLibrary.PowerFunction" Collapsed="true">
+    <Position X="7.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PowerFunction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Binary" Collapsed="true">
+    <Position X="10" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAgAAACAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Binary.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.492" />
+  </Class>
+  <Class Name="CalculatorLibrary.Unary" Collapsed="true">
+    <Position X="4.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAgAAACAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Unary.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassDiagram.EvaluatorClass" HideInheritanceLine="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAEAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EvaluatorClass.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Sin" Collapsed="true">
+    <Position X="3.5" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Cot" Collapsed="true">
+    <Position X="5.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Tan" Collapsed="true">
+    <Position X="3.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Tan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Addition" Collapsed="true">
+    <Position X="9.25" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Addition.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Division" Collapsed="true">
+    <Position X="7.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Division.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Multiplication" Collapsed="true">
+    <Position X="9.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Multiplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.ExceptionHandling">
+    <Position X="8" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>BinaryExceptionHandling.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Subtraction" Collapsed="true">
+    <Position X="7.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Subtraction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Sec" Collapsed="true">
+    <Position X="5.25" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Sec.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Cosec" Collapsed="true">
+    <Position X="3.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cosec.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Cos" Collapsed="true">
+    <Position X="5.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Cos.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.UnknownOperatorsException" Collapsed="true">
+    <Position X="6" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UnknownOperatorsException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.MemoryLimitExceeded" Collapsed="true">
+    <Position X="8" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MemoryLimitExceeded.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.InvalidNumberOfOperands" Collapsed="true">
+    <Position X="10" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvalidNumberOfOperands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.InvalidTypesOfOperands" Collapsed="true">
+    <Position X="12" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>InvalidTypesOfOperands.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Percentage" Collapsed="true">
+    <Position X="9.5" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Percentage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Token">
+    <Position X="4" Y="4" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CalculatorLibrary.Token.Type" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Token.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgA=</HashCode>
+      <FileName>Token.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.OperatorPrecedence">
+    <Position X="11" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OperatorPrecedence.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ClassDiagram.Parser" HideInheritanceLine="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Parser.cs</FileName>
+      <NewMemberFileName>parser.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CalculatorLibrary.IOperation" Collapsed="true">
+    <Position X="8" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>IOperation.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
