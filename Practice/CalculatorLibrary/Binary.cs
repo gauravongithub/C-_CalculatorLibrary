@@ -19,7 +19,7 @@ namespace CalculatorLibrary
             NumberOfOperands = 2;
         }
 
-public ResourceManager rm = new ResourceManager("CalculateLibrary.Resource1", Assembly.GetExecutingAssembly());
+         public ResourceManager rm = new ResourceManager("CalculatorLibrary.CalculatorResource", Assembly.GetExecutingAssembly());
         public double Evaluate(double[] values)
         {
             if (values == null) throw new ArgumentNullException();

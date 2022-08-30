@@ -61,7 +61,7 @@ namespace CalculatorLibrary {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You are dividing by Zero which is not allowed.
+        ///   Looks up a localized string similar to You are dividing by Zero which is not allowed. Function-{0}, Class-{1}.
         /// </summary>
         internal static string DivideByZero {
             get {

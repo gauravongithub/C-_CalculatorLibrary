@@ -1,0 +1,73 @@
+[
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "%",
+    "Operator": "mod"
+  },
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "+",
+    "Operator": "add"
+  },
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "-",
+    "Operator": "subtract"
+  },
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "*",
+    "Operator": "multiply"
+  },
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "/",
+    "Operator": "divide"
+  },
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "Sin",
+    "Operator": "Sin"
+  },
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "Cos",
+    "Operator": "Cos"
+  },
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "Tan",
+    "Operator": "Tan"
+  },
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "Cosec",
+    "Operator": "Cosec"
+  },
+  {
+    "IndexX": 0,
+    "IndexY": 0,
+    "Panel": "StandardCalculator",
+    "ButtonName": "Sec",
+    "Operator": "Sec"
+  }
+
+]

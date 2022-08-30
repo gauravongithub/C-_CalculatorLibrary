@@ -117,16 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="DivideByZero" xml:space="preserve">
-    <value>You are dividing by Zero which is not allowed. Function-{0}, Class-{1}</value>
-  </data>
-  <data name="InvalidNumberOfOperands" xml:space="preserve">
-    <value>You have entered invalid number of inputs</value>
-  </data>
-  <data name="InvalidTypesOfOperator" xml:space="preserve">
-    <value>You have entered invalid type of operators</value>
-  </data>
-  <data name="MemoryLimitExceeded" xml:space="preserve">
-    <value>Answer is too large</value>
-  </data>
 </root>
