@@ -7,7 +7,7 @@ namespace CalculatorLibrary
 {
     public class InvalidNumberOfOperands : ExceptionHandling
     {
-        public InvalidNumberOfOperands(string message)
+        public InvalidNumberOfOperands(string message) : base(message)
         {
             Console.WriteLine(message);
         }

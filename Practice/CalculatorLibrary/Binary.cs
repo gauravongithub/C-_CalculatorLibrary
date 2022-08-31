@@ -22,7 +22,7 @@ namespace CalculatorLibrary
          public ResourceManager rm = new ResourceManager("CalculatorLibrary.CalculatorResource", Assembly.GetExecutingAssembly());
         public double Evaluate(double[] values)
         {
-            if (values == null) throw new ArgumentNullException();
+            if (values == null) throw new ArgumentNullException(rm.GetString("ArgumentNullException"));
             if (NumberOfOperands != values.Length)
                throw new InvalidNumberOfOperands(string.Format(rm.GetString("InvalidNumberOfOperands")));
 

@@ -1,73 +1,207 @@
 [
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "%",
-    "Operator": "mod"
+    "buttonName": "0",
+    "Row": 5,
+    "Col": 1,
+    "panelName": "operationPanel",
+    "value": "0"
   },
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "+",
-    "Operator": "add"
+    "buttonName": ".",
+    "Row": 5,
+    "Col": 2,
+    "panelName": "operationPanel",
+    "value": "."
   },
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "-",
-    "Operator": "subtract"
+    "buttonName": "+/-",
+    "Row": 5,
+    "Col": 0,
+    "panelName": "operationPanel",
+    "value": "Sign"
   },
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "*",
-    "Operator": "multiply"
+    "buttonName": "1",
+    "Row": 4,
+    "Col": 0,
+    "panelName": "operationPanel",
+    "value": "1"
   },
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "/",
-    "Operator": "divide"
+    "buttonName": "2",
+    "Row": 4,
+    "Col": 1,
+    "panelName": "operationPanel",
+    "value": "2"
   },
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "Sin",
-    "Operator": "Sin"
+    "buttonName": "3",
+    "Row": 4,
+    "Col": 2,
+    "panelName": "operationPanel",
+    "value": "3"
   },
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "Cos",
-    "Operator": "Cos"
+    "buttonName": "4",
+    "Row": 3,
+    "Col": 0,
+    "panelName": "operationPanel",
+    "value": "4"
   },
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "Tan",
-    "Operator": "Tan"
+    "buttonName": "5",
+    "Row": 3,
+    "Col": 1,
+    "panelName": "operationPanel",
+    "value": "5"
   },
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "Cosec",
-    "Operator": "Cosec"
+    "buttonName": "6",
+    "Row": 3,
+    "Col": 2,
+    "panelName": "operationPanel",
+    "value": "6"
   },
   {
-    "IndexX": 0,
-    "IndexY": 0,
-    "Panel": "StandardCalculator",
-    "ButtonName": "Sec",
-    "Operator": "Sec"
+    "buttonName": "7",
+    "Row": 2,
+    "Col": 0,
+    "panelName": "operationPanel",
+    "value": "7"
+  },
+  {
+    "buttonName": "8",
+    "Row": 2,
+    "Col": 1,
+    "panelName": "operationPanel",
+    "value": "8"
+  },
+  {
+    "buttonName": "9",
+    "Row": 2,
+    "Col": 2,
+    "panelName": "operationPanel",
+    "value": "9"
+  },
+  {
+    "buttonName": "=",
+    "Row": 5,
+    "Col": 3,
+    "panelName": "operationPanel",
+    "value": null
+  },
+  {
+    "buttonName": "+",
+    "Row": 4,
+    "Col": 3,
+    "panelName": "operationPanel",
+    "value": "+"
+  },
+  {
+    "buttonName": "-",
+    "Row": 3,
+    "Col": 3,
+    "panelName": "operationPanel",
+    "value": "-"
+  },
+  {
+    "buttonName": "*",
+    "Row": 2,
+    "Col": 3,
+    "panelName": "operationPanel",
+    "value": "*"
+  },
+  {
+    "buttonName": "/",
+    "Row": 1,
+    "Col": 3,
+    "panelName": "operationPanel",
+    "value": "/"
+  },
+  {
+    "buttonName": "x^(1/2)",
+    "Row": 1,
+    "Col": 0,
+    "panelName": "operationPanel",
+    "value": "Root"
+  },
+  {
+    "buttonName": "x^2",
+    "Row": 1,
+    "Col": 1,
+    "panelName": "operationPanel",
+    "value": "Square"
+  },
+  {
+    "buttonName": "1/x",
+    "Row": 1,
+    "Col": 2,
+    "panelName": "operationPanel",
+    "value": "Inverse"
+  },
+  {
+    "buttonName": "%",
+    "Row": 0,
+    "Col": 0,
+    "panelName": "operationPanel",
+    "value": "Mod"
+  },
+  {
+    "buttonName": "CE",
+    "Row": 0,
+    "Col": 1,
+    "panelName": "operationPanel",
+    "value": null
+  },
+  {
+    "buttonName": "C",
+    "Row": 0,
+    "Col": 2,
+    "panelName": "operationPanel",
+    "value": null
+  },
+  {
+    "buttonName": "<-",
+    "Row": 0,
+    "Col": 3,
+    "panelName": "operationPanel",
+    "value": null
+  },
+ 
+  {
+    "buttonName": "MC",
+    "Row": 0,
+    "Col": 0,
+    "panelName": "memoryPanel",
+    "value": null
+  },
+  {
+    "buttonName": "MR",
+    "Row": 0,
+    "Col": 1,
+    "panelName": "memoryPanel",
+    "value": null
+  },
+  {
+    "buttonName": "M+",
+    "Row": 0,
+    "Col": 2,
+    "panelName": "memoryPanel",
+    "value": null
+  },
+  {
+    "buttonName": "M-",
+    "Row": 0,
+    "Col": 3,
+    "panelName": "memoryPanel",
+    "value": null
+  },
+  {
+    "buttonName": "MS",
+    "Row": 0,
+    "Col": 4,
+    "panelName": "memoryPanel",
+    "value": null
   }
-
 ]
+

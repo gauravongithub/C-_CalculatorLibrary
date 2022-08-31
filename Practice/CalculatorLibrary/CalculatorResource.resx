@@ -129,4 +129,7 @@
   <data name="MemoryLimitExceeded" xml:space="preserve">
     <value>Answer is too large</value>
   </data>
+  <data name="ArgumentNullException" xml:space="preserve">
+    <value>You have entered NULL values</value>
+  </data>
 </root>

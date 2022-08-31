@@ -17,7 +17,8 @@ namespace CalculatorLibrary
             if (listOfOperands[1] == 0)
             {
                 throw new DivideByZeroException("You cannot divide a number by 0");
-                //throw new DivideByZero((rm.GetString("DivdeByZero")));
+                //throw new DivideByZero((rm.GetString("DivideByZero")));
+                //throw new DivideByZeroException(rm.GetString("DivideByZero"));
             }
 
             double firstOperand = listOfOperands[0];
