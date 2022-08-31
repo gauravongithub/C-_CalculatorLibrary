@@ -145,7 +145,7 @@
       <FileName>Percentage.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="CalculatorLibrary.Token">
+  <Class Name="CalculatorLibrary.Token" Collapsed="true">
     <Position X="4" Y="4" Width="1.5" />
     <NestedTypes>
       <Enum Name="CalculatorLibrary.Token.Type" Collapsed="true">
@@ -172,6 +172,13 @@
       <HashCode>AAAgAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
       <FileName>Parser.cs</FileName>
       <NewMemberFileName>parser.cs</NewMemberFileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Square" Collapsed="true">
+    <Position X="3.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Square.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="CalculatorLibrary.IOperation" Collapsed="true">

@@ -81,7 +81,6 @@
     <Compile Include="Addition.cs" />
     <Compile Include="Binary.cs" />
     <Compile Include="BinaryExceptionHandling.cs" />
-    <Compile Include="Class1.cs" />
     <Compile Include="Cos.cs" />
     <Compile Include="Cosec.cs" />
     <Compile Include="Cot.cs" />
@@ -104,6 +103,7 @@
     </Compile>
     <Compile Include="Sec.cs" />
     <Compile Include="Sin.cs" />
+    <Compile Include="Square.cs" />
     <Compile Include="Subtraction.cs" />
     <Compile Include="Tan.cs" />
     <Compile Include="Token.cs" />
@@ -113,7 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
-    <None Include="ClassDiagram1.cd" />
+    <None Include="CalculatorClassDiagram.cd" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

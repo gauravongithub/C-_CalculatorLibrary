@@ -60,5 +60,10 @@
     "className": "CalculatorLibrary.Percentage",
     "display": "%",
     "precedence": 2
+  },
+  {
+    "className": "CalculatorLibrary.Square",
+    "display": "Square",
+    "precedence": 3
   }
 ]

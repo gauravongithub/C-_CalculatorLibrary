@@ -50,7 +50,7 @@
             this.standardCalculator.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 91.93549F));
             this.standardCalculator.Size = new System.Drawing.Size(792, 434);
             this.standardCalculator.TabIndex = 0;
-            
+      
             // 
             // tableLayoutPanel2
             // 
@@ -83,7 +83,7 @@
             this.memoryPanel.Name = "memoryPanel";
             this.memoryPanel.RowCount = 1;
             this.memoryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.memoryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44F));
+            this.memoryPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45F));
             this.memoryPanel.Size = new System.Drawing.Size(628, 45);
             this.memoryPanel.TabIndex = 0;
             // 
@@ -129,7 +129,6 @@
             this.Controls.Add(this.standardCalculator);
             this.Name = "CalculatorForm";
             this.Text = "Form1";
-           
             this.standardCalculator.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
