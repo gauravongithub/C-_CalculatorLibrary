@@ -147,13 +147,6 @@
   </Class>
   <Class Name="CalculatorLibrary.Token" Collapsed="true">
     <Position X="4" Y="4" Width="1.5" />
-    <NestedTypes>
-      <Enum Name="CalculatorLibrary.Token.Type" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Token.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAgA=</HashCode>
       <FileName>Token.cs</FileName>
@@ -179,6 +172,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Square.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CalculatorLibrary.Inverse">
+    <Position X="5.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Inverse.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="CalculatorLibrary.IOperation" Collapsed="true">

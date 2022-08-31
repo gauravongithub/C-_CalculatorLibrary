@@ -65,5 +65,10 @@
     "className": "CalculatorLibrary.Square",
     "display": "Square",
     "precedence": 3
+  },
+  {
+    "className": "CalculatorLibrary.Inverse",
+    "display": "Inverse",
+    "precedence": 3
   }
 ]
