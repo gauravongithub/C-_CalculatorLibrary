@@ -116,6 +116,16 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CalculatorLibrary\CalculatorLibrary.csproj">
+      <Project>{635627a2-6c35-4098-9015-126612154f97}</Project>
+      <Name>CalculatorLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CalculatorTest\CalculatorTest.csproj">
+      <Project>{b54dd48f-1b69-48ab-bb1e-9e81e2f07362}</Project>
+      <Name>CalculatorTest</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.5\build\System.Text.Json.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

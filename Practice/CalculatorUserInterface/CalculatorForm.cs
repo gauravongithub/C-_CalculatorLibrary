@@ -28,21 +28,21 @@ namespace CalculatorUserInterface
         private void InitializeDisplay()
         {
            
-            calculatorPanel.Controls.Add(inputDisplayPad,0,0);
-            inputDisplayPad.Dock = DockStyle.Fill;
-            inputDisplayPad.Name = "inputPad";
+            calculatorPanel.Controls.Add(inputArea,0,0);
+            inputArea.Dock = DockStyle.Fill;
+            inputArea.Name = "inputPad";
 
-            calculatorPanel.Controls.Add(resultDisplayPad,0,1);
-            resultDisplayPad.Dock = DockStyle.Fill;
-            resultDisplayPad.Name = "resultPad";
-            resultDisplayPad.Text = "";
+            calculatorPanel.Controls.Add(resultArea,0,1);
+            resultArea.Dock = DockStyle.Fill;
+            resultArea.Name = "resultPad";
+            resultArea.Text = "";
         }
 
 
         private void InitializeButtons()
         {
             List<Buttons> buttonDetails = new List<Buttons>();
-             using (StreamReader s = new StreamReader("ButtonDetails.json"))
+             using (StreamReader s = new StreamReader("../../ButtonDetails.json"))
             {
                 buttonDetails = JsonSerializer.Deserialize<List<Buttons>>(s.ReadToEnd());
             }
@@ -53,19 +53,19 @@ namespace CalculatorUserInterface
             }
 
             int i=0;
-            foreach(Buttons button in buttons)
+            foreach(Button button in buttons)
             {
                 button.Dock = DockStyle.Fill;
                 button.Name = buttonDetails[i].buttonName;
                 button.Text = buttonDetails[i].buttonName;
-                button.Tag = buttonDetails[i].expText;
+                button.Tag = buttonDetails[i].value;
                 if (buttonDetails[i].panelName == "memoryPanel")
                 {
-                    memoryPanel.Controls.Add(button, buttonDetails[i].indexCol, buttonDetails[i].indexRow);
+                    memoryPanel.Controls.Add(button, buttonDetails[i].Col, buttonDetails[i].Row);
                 }
                 if (buttonDetails[i].panelName == "operationPanel")
                 {
-                    operationPanel.Controls.Add(button, buttonDetails[i].indexCol, buttonDetails[i].indexRow);
+                    operationPanel.Controls.Add(button, buttonDetails[i].Col, buttonDetails[i].Row);
                 }
                 button.Click += new EventHandler(buttonPress);
                 i++;
@@ -80,7 +80,7 @@ namespace CalculatorUserInterface
             Button button = (Button)sender;
             if (button.Tag != null)
             {
-                inputDisplayPad.Text += button.Tag;
+                inputArea.Text += button.Tag;
             }
             else if(button.Tag == null)
             {
@@ -107,29 +107,29 @@ namespace CalculatorUserInterface
                 else if (button.Name == "=")
                 {
                     double result = 0;
-                    Evaluator ev= new Evaluator();
-                    result =  ev.Evaluate(inputDisplayPad.Text);
-                    resultDisplayPad.Text= result.ToString();
+                    EvaluatorClass ev= new EvaluatorClass();
+                    result =  ev.Evaluate(inputArea.Text);
+                    resultArea.Text= result.ToString();
                 }
                 else if (button.Name == "<-")
                 {
                     string s = "";
-                    for (int i = 0; i < inputDisplayPad.TextLength-1; i++)
-                        s += inputDisplayPad.Text[i].ToString();
-                    inputDisplayPad.Text = s;
+                    for (int i = 0; i < inputArea.TextLength-1; i++)
+                        s += inputArea.Text[i].ToString();
+                    inputArea.Text = s;
                 }
                 else if (button.Name == "C")
                 {
 
-                    inputDisplayPad.Text = "";
-                    resultDisplayPad.Text = "";
+                    inputArea.Text = "";
+                    resultArea.Text = "";
                 }
                 else if (button.Name == "CE")
                 {
                     int i;
-                    for(i=inputDisplayPad.TextLength-1; i>=0;i--)
+                    for(i=inputArea.TextLength-1; i>=0;i--)
                     {
-                        if (inputDisplayPad.Text[i] == '.' || char.IsDigit(inputDisplayPad.Text[i]))
+                        if (inputArea.Text[i] == '.' || char.IsDigit(inputArea.Text[i]))
                          {
 
                         } else
@@ -137,43 +137,14 @@ namespace CalculatorUserInterface
                     }
                     string s="";
                     for (int j = 0; j <= i; j++)
-                        s += inputDisplayPad.Text[j];
-                    inputDisplayPad.Text = s;
+                        s += inputArea.Text[j];
+                    inputArea.Text = s;
                 }
             }
         }
 
 
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void flowLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void tableLayoutPanel3_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 
     public class Buttons
