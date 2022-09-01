@@ -70,3 +70,4 @@ C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\Calculator
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorTest\obj\Debug\CalculatorTest.csproj.CopyComplete
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorTest\obj\Debug\CalculatorTest.dll
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorTest\obj\Debug\CalculatorTest.pdb
+C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorTest\bin\Debug\PrecedenceDetails.json

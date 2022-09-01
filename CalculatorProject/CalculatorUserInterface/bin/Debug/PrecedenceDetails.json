@@ -1,0 +1,74 @@
+[
+  {
+    "className": "CalculatorLibrary.Addition",
+    "display": "+",
+    "precedence": 1
+  },
+
+  {
+    "className": "CalculatorLibrary.Subtraction",
+    "display": "-",
+    "precedence": 1
+  },
+
+  {
+    "className": "CalculatorLibrary.Multiplication",
+    "display": "*",
+    "precedence": 2
+  },
+  {
+    "className": "CalculatorLibrary.Division",
+    "display": "/",
+    "precedence": 2
+  },
+  {
+    "className": "CalculatorLibrary.PowerFunction",
+    "display": "^",
+    "precedence": 3
+  },
+  {
+    "className": "CalculatorLibrary.Sin",
+    "display": "sin",
+    "precedence": 4
+  },
+  {
+    "className": "CalculatorLibrary.Cos",
+    "display": "cos",
+    "precedence": 4
+  },
+  {
+    "className": "CalculatorLibrary.Tan",
+    "display": "tan",
+    "precedence": 4
+  },
+  {
+    "className": "CalculatorLibrary.Cot",
+    "display": "cot",
+    "precedence": 4
+  },
+  {
+    "className": "CalculatorLibrary.Sec",
+    "display": "sec",
+    "precedence": 4
+  },
+  {
+    "className": "CalculatorLibrary.Cosec",
+    "display": "cosec",
+    "precedence": 4
+  },
+  {
+    "className": "CalculatorLibrary.Percentage",
+    "display": "%",
+    "precedence": 2
+  },
+  {
+    "className": "CalculatorLibrary.Square",
+    "display": "Square",
+    "precedence": 3
+  },
+  {
+    "className": "CalculatorLibrary.Inverse",
+    "display": "Inverse",
+    "precedence": 3
+  }
+]

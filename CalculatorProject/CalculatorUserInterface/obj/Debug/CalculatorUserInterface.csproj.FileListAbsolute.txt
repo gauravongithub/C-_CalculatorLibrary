@@ -90,3 +90,4 @@ C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\Calculator
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorUserInterface\obj\Debug\CalculatorUserInterface.csproj.CopyComplete
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorUserInterface\obj\Debug\CalculatorUserInterface.exe
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorUserInterface\obj\Debug\CalculatorUserInterface.pdb
+C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorUserInterface\bin\Debug\PrecedenceDetails.json

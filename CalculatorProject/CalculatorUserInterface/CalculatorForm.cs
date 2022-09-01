@@ -174,19 +174,8 @@ namespace CalculatorUserInterface
                     case "=":
                         try
                         {
-
                             double result = 0;
                             EvaluatorClass ev = new EvaluatorClass();
-                            //SortedSet<String> typesOfOperators = new SortedSet<String>();
-                            //TextBox tempInput = new TextBox();
-                            //typesOfOperators.Add("+");
-                            //typesOfOperators.Add("-");
-                            //typesOfOperators.Add("*");
-                            //typesOfOperators.Add("/");
-                            //for(int inputAreaIndex = 0; inputAreaIndex <inputArea.Text.Length; inputAreaIndex++)
-                            //{
-
-                            //}
                             result = ev.Evaluate(inputArea.Text);
                             resultArea.Text = result.ToString();
                         }

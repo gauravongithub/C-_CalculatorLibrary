@@ -94,3 +94,4 @@ C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\Calculator
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorLibrary\obj\Debug\CalculatorLibrary.csproj.CopyComplete
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorLibrary\obj\Debug\CalculatorLibrary.dll
 C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorLibrary\obj\Debug\CalculatorLibrary.pdb
+C:\Users\GPCTAdmin\source\repos\gaurav-kumar-tiwari\CalculatorProject\CalculatorLibrary\bin\Debug\PrecedenceDetails.json

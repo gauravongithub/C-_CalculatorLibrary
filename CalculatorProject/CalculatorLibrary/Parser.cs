@@ -59,7 +59,7 @@ namespace CalculatorLibrary
         public List<Token> Postfix(string expression)
         {
 
-            using (StreamReader s = new StreamReader("../../../PrecedenceFile.json"))
+            using (StreamReader s = new StreamReader("PrecedenceDetails.json"))
             {
                 operatorsList = JsonSerializer.Deserialize<List<OperatorPrecedence>>(s.ReadToEnd());
             }
