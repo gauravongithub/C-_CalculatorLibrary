@@ -93,6 +93,7 @@
     <Compile Include="MemoryException.cs" />
     <Compile Include="MemoryLimitExceeded.cs" />
     <Compile Include="MemoryOperations.cs" />
+    <Compile Include="Mod.cs" />
     <Compile Include="Multiplication.cs" />
     <Compile Include="OperatorPrecedence.cs" />
     <Compile Include="Parser.cs" />

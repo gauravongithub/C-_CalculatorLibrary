@@ -70,5 +70,10 @@
     "className": "CalculatorLibrary.Inverse",
     "display": "Inverse",
     "precedence": 3
+  },
+  {
+    "className": "CalculatorLibrary.Mod",
+    "display": "Mod",
+    "precedence": 2
   }
 ]

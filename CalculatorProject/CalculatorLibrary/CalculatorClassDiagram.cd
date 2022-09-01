@@ -195,6 +195,13 @@
       <FileName>MemoryException.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="CalculatorLibrary.Mod">
+    <Position X="9.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Mod.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Interface Name="CalculatorLibrary.IOperation" Collapsed="true">
     <Position X="8" Y="0.75" Width="1.5" />
     <TypeIdentifier>
