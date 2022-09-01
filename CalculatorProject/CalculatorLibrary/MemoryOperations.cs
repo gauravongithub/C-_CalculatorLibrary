@@ -9,7 +9,7 @@ using System.Reflection;
 namespace CalculatorLibrary
 {
     public enum Memo { MemoryAdd, MemorySubtract, MemoryStore, MemoryRecall, MemoryClear };
-    public class MemoryOperations
+    public static class MemoryOperations
     {
         private static List<double> memory;
         private static ResourceManager exception;

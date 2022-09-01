@@ -128,7 +128,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.standardCalculator);
             this.Name = "CalculatorForm";
-            this.Text = "Form1";
+            this.Text = "StandardCalculator";
             this.Load += new System.EventHandler(this.CalculatorForm_Load);
             this.standardCalculator.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
